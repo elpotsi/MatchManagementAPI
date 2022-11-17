@@ -10,6 +10,16 @@ namespace MatchManagementAPI.Data
 	{
 		public MockMatchRepo() { }
 
+		public void CreateMatch(Match cmd)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void DeleteMatch(Match cmd)
+		{
+			throw new NotImplementedException();
+		}
+
 		public IEnumerable<Match> GetAllMatches()
 		{
 			var matches = new List<Match>
@@ -26,6 +36,16 @@ namespace MatchManagementAPI.Data
 		public Match GetMatchBy(int id)
 		{
 			return new Match { ID = 0, Description = "match of football", MatchDate = new DateTime(), MatchTime = new TimeSpan(), TeamA = "barcellona", TeamB = "AEK", Sport = Match.SportType.Football };
+		}
+
+		public bool SaveChanges()
+		{
+			throw new NotImplementedException();
+		}
+
+		public void UpdateMatch(Match cmd)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
